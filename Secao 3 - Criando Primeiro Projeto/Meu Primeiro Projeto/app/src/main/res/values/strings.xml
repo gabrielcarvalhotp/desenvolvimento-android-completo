@@ -3,4 +3,6 @@
     <string name="my_name">Gabriel Carvalho de Oliveira</string>
     <string name="click_here">Clique aqui</string>
     <string name="button_click_with_success">Botão clicado com sucesso.</string>
+    <string name="draw_number">Sortear um número.</string>
+    <string name="result">Resultado.</string>
 </resources>
