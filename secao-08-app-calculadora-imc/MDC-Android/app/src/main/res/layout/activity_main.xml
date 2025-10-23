@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_weight"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o seu peso ex: 60.5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_height"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_weight"
+        tools:layout_editor_absoluteX="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o sua altura ex: 1.70" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Digite com '.' as casas decimais"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintTop_toBottomOf="@+id/text_description"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
